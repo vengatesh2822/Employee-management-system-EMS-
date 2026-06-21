@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <h2>Welcome Back 👋</h2>
+            <p>Login to access</p>
+    <form autocomplete="off">
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter Email"
+        autocomplete="new-email"
+    >
+
+<div class="password-box">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter Password"
+    >
+
+    <span class="eye-icon" onclick="togglePassword()">
+        <i id="eyeIcon" class="fa-solid fa-eye"></i>
+    </span>
+
+</div>
+
+    <button type="button" onclick="login()">
+        Login
+    </button>
+
+</form>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
