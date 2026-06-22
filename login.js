@@ -5,7 +5,10 @@ function login(){
 
     const profile = JSON.parse(
         localStorage.getItem("adminProfile")
-    );
+    ) || {
+        email: "admin@gmail.com",
+        password: "admin123"
+    };
 
     if(
         email === profile.email &&
